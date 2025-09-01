@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gen-AI Hackathon 2k25</title>
-    <!-- Use this link to load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,17 +87,18 @@
 </head>
 <body class="bg-black text-gray-100">
 
-    <!-- Header and Mobile Menu -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-90 backdrop-filter backdrop-blur-lg border-b border-gray-700 py-4 px-6 md:px-12 flex items-center justify-between">
         <a href="#home" class="flex items-center space-x-2">
-            <!-- CHANGE: Replace the GDG logo with your own -->
             <img src="images/logo3.jpg" alt="GDG Logo" class="h-10">
+            <span class="text-xl font-bold text-gray-100">GDG OC VIEW</span>
         </a>
         <nav class="hidden md:flex space-x-8">
             <a href="#details" class="text-lg text-gray-300 hover:text-white transition-colors duration-300">Details</a>
             <a href="#domains" class="text-lg text-gray-300 hover:text-white transition-colors duration-300">Domains</a>
+            <a href="#updates" class="text-lg text-gray-300 hover:text-white transition-colors duration-300">Updates</a>
             <a href="#sponsors" class="text-lg text-gray-300 hover:text-white transition-colors duration-300">Sponsors</a>
             <a href="#team" class="text-lg text-gray-300 hover:text-white transition-colors duration-300">Team</a>
+            <a href="#co-organisers" class="text-lg text-gray-300 hover:text-white transition-colors duration-300">Co-Organisers</a>
         </nav>
         <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -111,8 +111,10 @@
         <div class="flex flex-col items-center justify-center h-full space-y-8">
             <a href="#details" class="text-3xl text-gray-300 hover:text-white transition-colors duration-300" onclick="document.getElementById('mobile-menu').classList.add('-translate-x-full')">Details</a>
             <a href="#domains" class="text-3xl text-gray-300 hover:text-white transition-colors duration-300" onclick="document.getElementById('mobile-menu').classList.add('-translate-x-full')">Domains</a>
+            <a href="#updates" class="text-3xl text-gray-300 hover:text-white transition-colors duration-300" onclick="document.getElementById('mobile-menu').classList.add('-translate-x-full')">Updates</a>
             <a href="#sponsors" class="text-3xl text-gray-300 hover:text-white transition-colors duration-300" onclick="document.getElementById('mobile-menu').classList.add('-translate-x-full')">Sponsors</a>
             <a href="#team" class="text-3xl text-gray-300 hover:text-white transition-colors duration-300" onclick="document.getElementById('mobile-menu').classList.add('-translate-x-full')">Team</a>
+            <a href="#co-organisers" class="text-3xl text-gray-300 hover:text-white transition-colors duration-300" onclick="document.getElementById('mobile-menu').classList.add('-translate-x-full')">Co-Organisers</a>
             <button class="absolute top-8 right-8 text-gray-300 hover:text-white focus:outline-none" onclick="document.getElementById('mobile-menu').classList.add('-translate-x-full')">
                 <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -124,33 +126,29 @@
 
     <main class="pt-24">
 
-        <!-- Hero Section -->
         <section id="home" class="relative min-h-screen flex flex-col items-center justify-center text-center p-6 bg-black overflow-hidden">
-            <!-- CHANGE: The background image and overlay have been removed completely from this section. -->
             <div class="relative z-10 flex flex-col items-center justify-center h-full">
                 <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fade-in-up">
                     <span class="text-google-blue">G</span><span class="text-google-red">e</span><span class="text-google-yellow">n</span><span class="text-google-blue">A</span><span class="text-google-green">I</span>
                     Hackathon
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mb-8 animate-fade-in-up-slow">
-                    <!-- CHANGE: Update this with your hackathon's mission or description -->
                     Unleash your creativity and code the future with Generative AI. Join us for a 24-hour coding challenge to build innovative solutions that solve real-world problems.
                 </p>
-                <!-- CHANGE: Replace the link with your actual registration form link -->
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBRlodwFIpgvgeQy6orV2S11vjxjj-LJEFpMHJepAkeEIxCg/viewform" target="_blank" class="px-8 py-3 bg-gray-700 text-white font-semibold rounded-full shadow-lg hover:bg-gray-600 transition-transform transform hover:scale-105 duration-300">
                     Register Now
                 </a>
             </div>
         </section>
+        
+        <hr class="my-16 md:my-24 border-gray-700">
 
-        <!-- Program Details Section -->
         <section id="details" class="py-16 md:py-24 p-6 bg-black">
             <div class="container mx-auto">
                 <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-100">Program Details</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- CHANGE: Update Date & Time -->
                     <div class="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-700">
-                        <h3 class="text-2xl font-semibold text-google-green mb-4 flex items-center space-x-2">
+                        <h3 class="text-2xl font-bold text-google-green mb-4 flex items-center space-x-2">
                             <svg class="h-8 w-8 text-google-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h.01M15 11h.01M12 11h.01M15 14h.01M12 14h.01M18 14h.01M18 17h.01M15 17h.01M12 17h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
@@ -161,9 +159,8 @@
                             <li>Timings: 15th 9:00 AM to 16th 9:00 AM</li>
                         </ul>
                     </div>
-                    <!-- CHANGE: Update Team Details -->
                     <div class="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-700">
-                        <h3 class="text-2xl font-semibold text-google-green mb-4 flex items-center space-x-2">
+                        <h3 class="text-2xl font-bold text-google-green mb-4 flex items-center space-x-2">
                             <svg class="h-8 w-8 text-google-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h-1a1 1 0 01-1-1v-2.128c0-.66.273-1.297.755-1.748l1.378-1.378a.75.75 0 011.06 0l1.378 1.378c.482.451.755 1.088.755 1.748V19a1 1 0 01-1 1h-1zM7 20h1a1 1 0 001-1v-2.128c0-.66-.273-1.297-.755-1.748L6.867 14.75a.75.75 0 00-1.06 0L4.43 16.122c-.482.451-.755 1.088-.755 1.748V19a1 1 0 001 1h1zM12 4a3 3 0 100 6 3 3 0 000-6zM5 7a3 3 0 100 6 3 3 0 000-6zM19 7a3 3 0 100 6 3 3 0 000-6z" />
                             </svg>
@@ -171,21 +168,19 @@
                         </h3>
                         <ul class="list-disc list-inside space-y-2 text-lg text-gray-300">
                             <li>Team Size: 1-5 members</li>
-                            <li>Night Stay: Male participants should leave the campus by 7:00 PM on Sept 15th and can return on the morning of Sept 16th.</li>
+                            <li>No night stay for male participants.</li>
                             <li>Registration Fee: ₹500 per team</li>
                         </ul>
                     </div>
-                    <!-- CHANGE: Update Venue -->
                     <div class="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-700">
-                        <h3 class="text-2xl font-semibold text-google-green mb-4 flex items-center space-x-2">
+                        <h3 class="text-2xl font-bold text-google-green mb-4 flex items-center space-x-2">
                             <svg class="h-8 w-8 text-google-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
                             </svg>
                             <span>Venue</span>
                         </h3>
                         <p class="text-lg font-bold">Vignan's Institute of Engineering for Women (A)</p>
-                        <!-- CHANGE: Replace with the correct Google Maps link -->
-                        <a href="https://maps.app.goo.gl/qM3fdZAR2pH9DCKX9?g_st=aw" target="_blank" class="text-lg text-google-blue hover:underline cursor-pointer flex items-center justify-center space-x-2 mt-4">
+                        <a href="https://maps.google.com/maps?q=Vignan's+Institute+of+Engineering+for+Women" target="_blank" class="text-lg text-google-blue hover:underline cursor-pointer flex items-center justify-center space-x-2 mt-4">
                             <span>Get Directions</span>
                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6L14 12L10 18"/>
@@ -195,17 +190,17 @@
                 </div>
             </div>
         </section>
+        
+        <hr class="my-16 md:my-24 border-gray-700">
 
-        <!-- Domains Section -->
         <section id="domains" class="py-16 md:py-24 p-6 bg-black">
             <div class="container mx-auto">
                 <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-100">Domains</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- CHANGE: Add a new domain by copying this div and updating the data attributes -->
                     <div class="p-6 rounded-lg bg-gray-900 shadow-md border border-gray-700 flex items-center justify-between cursor-pointer group hover:bg-gray-700 transition-colors duration-300"
                         data-type="domain"
                         data-title="Generative AI for Youth Mental Wellness"
-                        data-description="Develop AI-powered applications that can help improve mental health among young people. This could involve creating tools for mood tracking, guided meditations, or a chatbot that provides supportive and confidential conversations.">
+                        data-description="Develop AI-powered applications that can help improve mental health among young people. This could involve creating tools for mood tracking, guided meditations, or a chatbot that provides supportive and confidential conversations tailored to their needs.">
                         <span>Generative AI for Youth Mental Wellness</span>
                         <svg class="w-6 h-6 text-google-yellow group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -214,7 +209,7 @@
                     <div class="p-6 rounded-lg bg-gray-900 shadow-md border border-gray-700 flex items-center justify-between cursor-pointer group hover:bg-gray-700 transition-colors duration-300"
                         data-type="domain"
                         data-title="AI Marketplace for Local Artisans"
-                        data-description="Create a platform that uses AI to help local artisans market their products, manage inventory, and connect with customers.">
+                        data-description="Create an innovative platform that uses AI to empower local artisans. This can include features for automated product descriptions, personalized marketing campaigns, and streamlined inventory management to help them reach a wider audience.">
                         <span>AI Marketplace for Local Artisans</span>
                         <svg class="w-6 h-6 text-google-yellow group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -223,7 +218,7 @@
                     <div class="p-6 rounded-lg bg-gray-900 shadow-md border border-gray-700 flex items-center justify-between cursor-pointer group hover:bg-gray-700 transition-colors duration-300"
                         data-type="domain"
                         data-title="AI for Demystifying Legal Documents"
-                        data-description="Develop an AI tool that simplifies complex legal jargon, making contracts and legal papers easier to understand for the average person.">
+                        data-description="Develop an AI tool that simplifies complex legal jargon and lengthy contracts. The solution should make legal papers more accessible and understandable for the general public, providing clear summaries and explanations of key terms.">
                         <span>AI for Demystifying Legal Documents</span>
                         <svg class="w-6 h-6 text-google-yellow group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -232,7 +227,7 @@
                     <div class="p-6 rounded-lg bg-gray-900 shadow-md border border-gray-700 flex items-center justify-between cursor-pointer group hover:bg-gray-700 transition-colors duration-300"
                         data-type="domain"
                         data-title="AI Combating Misinformation"
-                        data-description="Build an AI system that can identify, analyze, and flag fake news and misleading content across various platforms.">
+                        data-description="Build an AI-powered system that can detect, analyze, and flag fake news, deepfakes, and misleading content. Your solution should help users identify and avoid misinformation across various digital platforms.">
                         <span>AI Combating Misinformation</span>
                         <svg class="w-6 h-6 text-google-yellow group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -241,7 +236,7 @@
                     <div class="p-6 rounded-lg bg-gray-900 shadow-md border border-gray-700 flex items-center justify-between cursor-pointer group hover:bg-gray-700 transition-colors duration-300"
                         data-type="domain"
                         data-title="Personalized Career and Skills Advisor"
-                        data-description="Design an AI-powered advisor that provides personalized recommendations for career paths, skill development, and learning resources based on a user's interests and goals.">
+                        data-description="Design an AI-powered advisor that provides personalized recommendations for career paths and skill development. It should analyze a user's interests, qualifications, and goals to suggest relevant learning resources and job opportunities.">
                         <span>Personalized Career and Skills Advisor</span>
                         <svg class="w-6 h-6 text-google-yellow group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -250,7 +245,7 @@
                     <div class="p-6 rounded-lg bg-gray-900 shadow-md border border-gray-700 flex items-center justify-between cursor-pointer group hover:bg-gray-700 transition-colors duration-300"
                         data-type="domain"
                         data-title="AI for Sustainable Farming"
-                        data-description="Use AI to optimize farming practices, such as predicting crop yields, managing resources like water, and detecting pests to promote environmental sustainability.">
+                        data-description="Use AI to develop solutions that optimize farming practices and promote environmental sustainability. This could include systems for predicting crop yields, managing water resources efficiently, or detecting pests and diseases early.">
                         <span>AI for Sustainable Farming</span>
                         <svg class="w-6 h-6 text-google-yellow group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -259,7 +254,7 @@
                     <div class="p-6 rounded-lg bg-gray-900 shadow-md border border-gray-700 flex items-center justify-between cursor-pointer group hover:bg-gray-700 transition-colors duration-300"
                         data-type="domain"
                         data-title="Women Safety using AI"
-                        data-description="Develop an AI application that enhances the safety of women through features like real-time location sharing, emergency alerts, or predictive analysis of unsafe areas.">
+                        data-description="Develop an AI application that enhances the safety of women through innovative features like real-time location sharing, an emergency alert system, or predictive analysis of unsafe areas based on public data.">
                         <span>Women Safety using AI</span>
                         <svg class="w-6 h-6 text-google-yellow group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -268,7 +263,7 @@
                     <div class="p-6 rounded-lg bg-gray-900 shadow-md border border-gray-700 flex items-center justify-between cursor-pointer group hover:bg-gray-700 transition-colors duration-300"
                         data-type="domain"
                         data-title="Open Innovation"
-                        data-description="">
+                        data-description="This domain is for open-ended projects. Feel free to use your creativity and skills to build any innovative Gen-AI solution that addresses a real-world problem of your choice.">
                         <span>Open Innovation</span>
                         <svg class="w-6 h-6 text-google-yellow group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -277,47 +272,57 @@
                 </div>
             </div>
         </section>
+        
+        <hr class="my-16 md:my-24 border-gray-700">
 
-        <!-- Sponsors Section -->
-        <!--<section id="sponsors" class="py-16 md:py-24 p-6 bg-black">
+        <section id="updates" class="py-16 md:py-24 p-6 bg-black">
+            <div class="container mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-100">Updates</h2>
+                <p class="text-center text-lg text-gray-400 max-w-2xl mx-auto">
+                    Stay tuned for the latest news and announcements about the hackathon!
+                </p>
+            </div>
+        </section>
+        
+        <hr class="my-16 md:my-24 border-gray-700">
+
+        <section id="sponsors" class="py-16 md:py-24 p-6 bg-black">
             <div class="container mx-auto">
                 <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-100">Our Sponsors</h2>
                 <p class="text-center text-sm text-gray-400 mb-8">Special thanks to them</p>
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center">
-                    <!- CHANGE: Update with your sponsor images, names, and designations -->
-                    <!--<div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
+                    <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="sponsor"
-                        data-image="https://placehold.co/400x400/34A853/FFFFFF?text=Sponsor+1"
-                        data-name="Sponsor 1 Name"
-                        data-designation="CEO, Company A">
-                        <img src="https://placehold.co/200x200/34A853/FFFFFF?text=Sponsor+1" alt="Sponsor 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-green">
+                        data-image="https://placehold.co/400x400/34A853/FFFFFF?text=IVY+Overseas"
+                        data-name="IVY Overseas"
+                        data-designation="Education & Career Consultancy">
+                        <img src="https://placehold.co/200x200/34A853/FFFFFF?text=IVY+Overseas" alt="IVY Overseas Logo" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-green">
                         <div class="flex flex-col items-center">
-                            <p class="text-sm font-bold text-center">Sponsor 1 Name</p>
-                            <p class="text-xs text-center text-gray-400">CEO, Company A</p>
+                            <p class="text-sm font-bold text-center">IVY Overseas</p>
+                            <p class="text-xs text-center text-gray-400">Education & Career Consultancy</p>
                         </div>
                     </div>
-                    <!- Repeat for other sponsors -->
-                <!--</div>
+                </div>
             </div>
         </section>
+        
+        <hr class="my-16 md:my-24 border-gray-700">
 
-        <!-- Team Section -->
         <section id="team" class="py-16 md:py-24 p-6 bg-black">
             <div class="container mx-auto">
                 <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-100">Meet My Team</h2>
                 <p class="text-xl text-center text-gray-400 mb-12">The people who made this event happen.</p>
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center">
-                    <!-- CHANGE: Update with your team member images, names, designations, and LinkedIn links -->
-                     <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
+                    <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="team"
                         data-image="images/mam2.jpg"
                         data-name="GANGA PARVATHI"
-                        data-designation="FACULTY ADVISIOR"
-                        data-linkedin="hhttps://www.linkedin.com/me?trk=p_mwlite_profile_self-secondary_nav">
-                        <img src="images/mam2.jpg "  class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-designation="FACULTY ADVISOR"
+                        data-linkedin="https://www.linkedin.com/me">
+                        <img src="images/mam2.jpg" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
                             <p class="text-sm font-bold text-center">GANGA PARVATHI</p>
-                            <p class="text-xs text-center text-gray-400">FACULTY ADVISIOR</p>
+                            <p class="text-xs text-center text-gray-400">FACULTY ADVISOR</p>
                         </div>
                     </div>
                     <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
@@ -325,8 +330,8 @@
                         data-image="images/sharvani.jpg"
                         data-name="SHRAVANI SUBUDHI"
                         data-designation="LEAD"
-                        data-linkedin="https://www.linkedin.com/in/sharvani-subudhi-a83a5732b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                        <img src="images/sharvani.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-linkedin="https://www.linkedin.com/in/sharvani-subudhi-a83a5732b">
+                        <img src="images/sharvani.jpg" alt="Team Member" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
                             <p class="text-sm font-bold text-center">SHRAVANI SUBUDHI</p>
                             <p class="text-xs text-center text-gray-400">LEAD</p>
@@ -337,8 +342,8 @@
                         data-image="images/kaarthi.jpg"
                         data-name="KAARTHKEYANI"
                         data-designation="CO LEAD"
-                        data-linkedin="https://www.linkedin.com/in/peramburi-kaarthikeyani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                        <img src="images/kaarthi.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-linkedin="https://www.linkedin.com/in/peramburi-kaarthikeyani">
+                        <img src="images/kaarthi.jpg" alt="Team Member" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
                             <p class="text-sm font-bold text-center">KAARTHKEYANI</p>
                             <p class="text-xs text-center text-gray-400">CO LEAD</p>
@@ -350,7 +355,7 @@
                         data-name="HEMA SREE"
                         data-designation="TECH TEAM"
                         data-linkedin="http://www.linkedin.com/in/hema-sree-3b5aaa2b7">
-                        <img src="images/hema.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        <img src="images/hema.jpg" alt="Team Member" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
                             <p class="text-sm font-bold text-center">HEMA SREE</p>
                             <p class="text-xs text-center text-gray-400">TECH TEAM</p>
@@ -361,8 +366,8 @@
                         data-image="images/meenakshi.jpg"
                         data-name="GAYATRI MEENAKSHI"
                         data-designation="TECH TEAM"
-                        data-linkedin="https://www.linkedin.com/in/gayatrimeenakshi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                        <img src="images/meenakshi.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-linkedin="https://www.linkedin.com/in/gayatrimeenakshi">
+                        <img src="images/meenakshi.jpg" alt="Team Member" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
                             <p class="text-sm font-bold text-center">GAYATRI MEENAKSHI</p>
                             <p class="text-xs text-center text-gray-400">TECH TEAM</p>
@@ -373,8 +378,8 @@
                         data-image="images/sneha.jpg"
                         data-name="K SNEHA"
                         data-designation="DATA ANALYST"
-                        data-linkedin="https://www.linkedin.com/in/sneha-kakara-55151a344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
-                        <img src="images/sneha.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-linkedin="https://www.linkedin.com/in/sneha-kakara-55151a344">
+                        <img src="images/sneha.jpg" alt="Team Member" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
                             <p class="text-sm font-bold text-center">K SNEHA</p>
                             <p class="text-xs text-center text-gray-400">DATA ANALYST</p>
@@ -384,72 +389,69 @@
                         data-type="team"
                         data-image="images/akhila.jpg"
                         data-name="K M S AKHILA"
-                        data-designation="DESIGN TEAM "
-                        data-linkedin="https://www.linkedin.com/in/akhilakms?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                        <img src="images/akhila.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-designation="DESIGN TEAM"
+                        data-linkedin="https://www.linkedin.com/in/akhilakms">
+                        <img src="images/akhila.jpg" alt="Team Member" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
                             <p class="text-sm font-bold text-center">K M S AKHILA</p>
-                            <p class="text-xs text-center text-gray-400">DESIGN TEAM </p>
+                            <p class="text-xs text-center text-gray-400">DESIGN TEAM</p>
                         </div>
                     </div>
                     <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="team"
                         data-image="images/reshma.jpg"
-                        data-name="RESHMA "
-                        data-designation="RESHMA "
-                        data-linkedin="https://www.linkedin.com/in/rongali-reshma-2b40352b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                        <img src="images/reshma.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-name="RESHMA"
+                        data-designation="DESIGN TEAM"
+                        data-linkedin="https://www.linkedin.com/in/rongali-reshma-2b40352b8">
+                        <img src="images/reshma.jpg" alt="Team Member" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
-                            <p class="text-sm font-bold text-center">RESHMA </p>
+                            <p class="text-sm font-bold text-center">RESHMA</p>
                             <p class="text-xs text-center text-gray-400">DESIGN TEAM</p>
                         </div>
                     </div>
-    
                     <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="team"
                         data-image="images/kavya.jpg"
-                        data-name="RESHMA "
+                        data-name="KAVYA"
                         data-designation="DESIGN TEAM"
-                        data-linkedin="https://www.linkedin.com/in/kavya-gompa-80720832b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_appr1">
-                        <img src="images/reshma.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-linkedin="https://www.linkedin.com/in/kavya-gompa-80720832b">
+                        <img src="images/kavya.jpg" alt="Team Member" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
-                            <p class="text-sm font-bold text-center">KAVYA </p>
+                            <p class="text-sm font-bold text-center">KAVYA</p>
                             <p class="text-xs text-center text-gray-400">DESIGN TEAM</p>
                         </div>
                     </div>
-                     <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
+                    <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="team"
                         data-image="images/akshaya.jpg"
                         data-name="AKSHAYA"
                         data-designation="CONTENT AND MEDIA MANAGER"
-                        data-linkedin="https://www.linkedin.com/in/rupasrik?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app1">
-                        <img src="images/akshaya.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-linkedin="https://www.linkedin.com/in/rupasrik">
+                        <img src="images/akshaya.jpg" alt="Team Member" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
                             <p class="text-sm font-bold text-center">AKSHAYA</p>
                             <p class="text-xs text-center text-gray-400">CONTENT AND MEDIA MANAGER</p>
                         </div>
                     </div>
-
                     <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="team"
                         data-image="images/vaibhavi.jpg"
-                        data-name="TVAIBHAVI PRAGNA"
+                        data-name="T VAIBHAVI PRAGNA"
                         data-designation="CONTENT AND MEDIA MANAGER"
-                        data-linkedin="https://www.linkedin.com/in/vaibhavi-pragna-14aa90341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                        <img src="images/vaibhavi.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-linkedin="https://www.linkedin.com/in/vaibhavi-pragna-14aa90341">
+                        <img src="images/vaibhavi.jpg" alt="Team Member" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
                             <p class="text-sm font-bold text-center">VAIBHAVI PRAGNA</p>
                             <p class="text-xs text-center text-gray-400">CONTENT AND MEDIA MANAGER</p>
                         </div>
                     </div>
-                    
                     <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="team"
                         data-image="images/sumam.jpg"
-                        data-name="UMAM MAHARANA"
+                        data-name="SUMAM MAHARANA"
                         data-designation="PR MANAGER"
-                        data-linkedin="https://www.linkedin.com/in/sumam-maharana-a122b5325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                        <img src="images/sumam.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-linkedin="https://www.linkedin.com/in/sumam-maharana-a122b5325">
+                        <img src="images/sumam.jpg" alt="Team Member" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
                             <p class="text-sm font-bold text-center">SUMAM MAHARANA</p>
                             <p class="text-xs text-center text-gray-400">PR MANAGER</p>
@@ -458,117 +460,116 @@
                     <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="team"
                         data-image="images/anoosh.jpg"
-                        data-name="ANUSHA "
+                        data-name="ANUSHA"
                         data-designation="PR MANAGER"
                         data-linkedin="http://www.linkedin.com/in/polisetti-anusha">
-                        <img src="images/anoosh.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        <img src="images/anoosh.jpg" alt="Team Member" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
-                            <p class="text-sm font-bold text-center">ANUSHA </p>
+                            <p class="text-sm font-bold text-center">ANUSHA</p>
                             <p class="text-xs text-center text-gray-400">PR MANAGER</p>
                         </div>
                     </div>
-                  
                     <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="team"
                         data-image="images/rith.jpg"
                         data-name="NEELAM REETHIKA"
-                        data-designation="PR MANAGER<"
-                        data-linkedin="https://www.linkedin.com/in/neelam-reethika?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                        <img src="images/rith.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-designation="PR MANAGER"
+                        data-linkedin="https://www.linkedin.com/in/neelam-reethika">
+                        <img src="images/rith.jpg" alt="Team Member" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
                             <p class="text-sm font-bold text-center">NEELAM REETHIKA</p>
                             <p class="text-xs text-center text-gray-400">PR MANAGER</p>
                         </div>
                     </div>
-                  
-                    <!-- Repeat for other team members -->
                 </div>
             </div>
         </section>
-        <section id="team" class="py-16 md:py-24 p-6 bg-black">
+        
+        <hr class="my-16 md:my-24 border-gray-700">
+
+        <section id="co-organisers" class="py-16 md:py-24 p-6 bg-black">
             <div class="container mx-auto">
                 <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-100">CO-ORGANISERS</h2>
                 <p class="text-xl text-center text-gray-400 mb-12">In collaboration with our visionary co-organisers.</p>
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center">
-                    <!-- CHANGE: Update with your team member images, names, designations, and LinkedIn links -->
-                      <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
+                    <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="team"
                         data-image="images/prahasini.jpg"
                         data-name="D.Prahasini"
-                        data-designation="Tech team "
-                        data-linkedin="https://www.linkedin.com/in/neelam-reethika?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                        <img src="images/prahasini.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-designation="Tech Team"
+                        data-linkedin="https://www.linkedin.com/in/d-prahasini">
+                        <img src="images/prahasini.jpg" alt="Co-Organiser" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
-                            <p class="text-sm font-bold text-center"> D.Prahasini</p>
-                            <p class="text-xs text-center text-gray-400">Tech team </p>
+                            <p class="text-sm font-bold text-center">D.Prahasini</p>
+                            <p class="text-xs text-center text-gray-400">Tech Team</p>
                         </div>
                     </div>
-                     <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
+                    <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="team"
                         data-image="images/charishma.jpg"
-                        data-name=" P.Charishma"
-                        data-designation=" Data Analyst "
-                        data-linkedin=https://www.linkedin.com/in/charishma-pediredla-955758321>
-                        <img src="images/charishma.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-name="P.Charishma"
+                        data-designation="Data Analyst"
+                        data-linkedin="https://www.linkedin.com/in/charishma-pediredla-955758321">
+                        <img src="images/charishma.jpg" alt="Co-Organiser" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
-                            <p class="text-sm font-bold text-center">  P.Charishma </p>
-                            <p class="text-xs text-center text-gray-400"> Data Analyst </p>
+                            <p class="text-sm font-bold text-center">P.Charishma</p>
+                            <p class="text-xs text-center text-gray-400">Data Analyst</p>
                         </div>
                     </div>
-                     <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
+                    <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="team"
                         data-image="images/meghana.jpg"
-                        data-name=" S.Meghana"
-                        data-designation="Design Team "
-                        data-linkedin=https://www.linkedin.com/in/charishma-pediredla-955758321>
-                        <img src="images/meghana.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-name="S.Meghana"
+                        data-designation="Design Team"
+                        data-linkedin="https://www.linkedin.com/in/s-meghana">
+                        <img src="images/meghana.jpg" alt="Co-Organiser" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
-                            <p class="text-sm font-bold text-center">  S.Meghana  </p>
-                            <p class="text-xs text-center text-gray-400">  Design Team  </p>
+                            <p class="text-sm font-bold text-center">S.Meghana</p>
+                            <p class="text-xs text-center text-gray-400">Design Team</p>
                         </div>
                     </div>
                     <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="team"
                         data-image="images/tanushri.jpg"
-                        data-name=" P.Thanushri "
-                        data-designation=" PR"
-                        data-linkedin=https://www.linkedin.com/in/palavalasa-tanushri-50b36932a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app>
-                        <img src="images/tanushri.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-name="P.Thanushri"
+                        data-designation="PR"
+                        data-linkedin="https://www.linkedin.com/in/palavalasa-tanushri-50b36932a">
+                        <img src="images/tanushri.jpg" alt="Co-Organiser" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
-                            <p class="text-sm font-bold text-center">P.Thanushri </p>
-                            <p class="text-xs text-center text-gray-400">  PR </p>
+                            <p class="text-sm font-bold text-center">P.Thanushri</p>
+                            <p class="text-xs text-center text-gray-400">PR</p>
                         </div>
                     </div>
                     <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="team"
-                        data-image="images/.jpg"
-                        data-name=" Santhoshi  "
-                        data-designation=" Media & Content Managers"
-                        data-linkedin=https://www.linkedin.com/in/palavalasa-tanushri-50b36932a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app>
-                        <img src="images/.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-image="images/santhoshi.jpg"
+                        data-name="Santhoshi"
+                        data-designation="Media & Content Managers"
+                        data-linkedin="https://www.linkedin.com/in/santhoshi">
+                        <img src="images/santhoshi.jpg" alt="Co-Organiser" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
-                            <p class="text-sm font-bold text-center">Santhoshi </p>
-                            <p class="text-xs text-center text-gray-400"> Media & Content Managers </p>
+                            <p class="text-sm font-bold text-center">Santhoshi</p>
+                            <p class="text-xs text-center text-gray-400">Media & Content Managers</p>
                         </div>
                     </div>
-                     <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
+                    <div class="flex flex-col items-center cursor-pointer transform hover:scale-105 transition-transform duration-300"
                         data-type="team"
-                        data-image="images/sai praharshitha.jpg"
-                        data-name="  P.Sai Praharshitha  "
-                        data-designation=" Media & Content Managers"
-                        data-linkedin=https://www.linkedin.com/in/palavalasa-tanushri-50b36932a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app>
-                        <img src="images/sai praharshitha.jpg" alt="Team Member 1" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
+                        data-image="images/sai-praharshitha.jpg"
+                        data-name="P.Sai Praharshitha"
+                        data-designation="Media & Content Managers"
+                        data-linkedin="https://www.linkedin.com/in/p-sai-praharshitha">
+                        <img src="images/sai-praharshitha.jpg" alt="Co-Organiser" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 border-2 border-google-yellow">
                         <div class="flex flex-col items-center">
-                            <p class="text-sm font-bold text-center"> P.Sai Praharshitha </p>
-                            <p class="text-xs text-center text-gray-400"> Media & Content Managers </p>
+                            <p class="text-sm font-bold text-center">P.Sai Praharshitha</p>
+                            <p class="text-xs text-center text-gray-400">Media & Content Managers</p>
                         </div>
                     </div>
-                  
-                  
+                </div>
+            </div>
+        </section>
+        
+        <hr class="my-16 md:my-24 border-gray-700">
 
-                </section>
-
-        <!-- Contact Section -->
         <section id="contact" class="py-16 md:py-24 p-6 bg-black">
             <div class="container mx-auto text-center">
                 <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-100">Contact Us</h2>
@@ -576,7 +577,6 @@
                     Have questions? Feel free to reach out to us.
                 </p>
                 <div class="flex flex-col md:flex-row justify-center items-start md:space-x-16 space-y-8 md:space-y-0 text-center">
-                    <!-- Faculty Coordinators -->
                     <div class="flex flex-col items-center space-y-4 md:border-r-2 md:border-gray-700 md:pr-8">
                         <h3 class="text-2xl font-bold text-google-green">Faculty Coordinators</h3>
                         <p class="text-lg text-gray-200 font-semibold">
@@ -589,17 +589,13 @@
                             K.Bharat Vardhan: <a href="tel:+916281001843" class="text-lg text-google-blue hover:underline">+91 62810 01843</a>
                         </p>
                     </div>
-                    <!-- Student Coordinators -->
                     <div class="flex flex-col items-center space-y-4">
                         <h3 class="text-2xl font-bold text-google-yellow">Student Coordinators</h3>
                         <p class="text-lg text-gray-200 font-semibold">
-                            Sharvani Subudhi: <a href="tel:+918186972421" class="text-lg text-google-blue hover:underline">+91 81869 72421</a>
-                        </p>
-                        <p class="text-lg text-gray-200 font-semibold">
-                            P.Kaarthikeyani: <a href="tel:+918143653944" class="text-lg text-google-blue hover:underline">+91 81436 53944</a>
-                        </p>
-                        <p class="text-lg text-gray-200 font-semibold">
                             L.Thanuja Sai: <a href="tel:+919390945421" class="text-lg text-google-blue hover:underline">+91 93909 45421</a>
+                        </p>
+                        <p class="text-lg text-gray-200 font-semibold">
+                            Sharvani Subudhi: <a href="tel:+918186972421" class="text-lg text-google-blue hover:underline">+91 81869 72421</a>
                         </p>
                     </div>
                 </div>
@@ -607,21 +603,18 @@
         </section>
     </main>
 
-    <!-- Info Modal -->
     <div id="infoModal" class="modal">
         <div class="modal-content">
             <span class="close-button" onclick="closeModal()">×</span>
-            <!-- Profile image in the modal, now with a square shape and rounded corners -->
             <img id="modal-image" src="" alt="Profile Image" class="w-48 h-48 rounded-lg object-cover mx-auto mb-4 border-4 border-gray-600 hidden">
-            <!-- Details are now structured correctly: name, designation, then LinkedIn icon -->
             <h3 id="modal-title" class="text-3xl font-bold mb-2 text-google-green"></h3>
             <p id="modal-designation" class="text-lg text-gray-300 mb-4"></p>
+            <p id="modal-description" class="text-sm text-gray-400 mb-4 hidden"></p>
             <a id="modal-linkedin" href="#" target="_blank" class="hidden text-google-blue hover:text-white transition-colors duration-300">
                 <svg class="w-10 h-10 mx-auto" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11.5 19h-3v-11h3v11zm-1.5-12.74c-.958 0-1.722-.772-1.722-1.72s.764-1.72 1.722-1.72c.959 0 1.723.772 1.723 1.72s-.764 1.72-1.723 1.72zm13 12.74h-3v-5.698c0-1.353-.024-3.093-1.884-3.093-1.886 0-2.174 1.47-2.174 3.007v5.784h-3v-11h2.88v1.328h.04c.404-.766 1.388-1.574 2.846-1.574 3.03 0 3.593 1.996 3.593 4.59v6.646z"/>
                 </svg>
             </a>
-            <!-- Removed modal-description as it was not requested for team member modals -->
         </div>
     </div>
 
@@ -646,6 +639,7 @@
         const modalImage = document.getElementById('modal-image');
         const modalTitle = document.getElementById('modal-title');
         const modalDesignation = document.getElementById('modal-designation');
+        const modalDescription = document.getElementById('modal-description');
         const modalLinkedin = document.getElementById('modal-linkedin');
 
         function openModal(type, data) {
@@ -653,6 +647,7 @@
             modalImage.classList.add('hidden');
             modalTitle.textContent = '';
             modalDesignation.textContent = '';
+            modalDescription.classList.add('hidden');
             modalLinkedin.classList.add('hidden');
 
             if (type === 'sponsor' || type === 'team') {
@@ -660,12 +655,14 @@
                 modalTitle.textContent = data.name;
                 modalDesignation.textContent = data.designation;
                 modalImage.classList.remove('hidden');
-                if (type === 'team' && data.linkedin) {
+                if (data.linkedin) {
                     modalLinkedin.href = data.linkedin;
                     modalLinkedin.classList.remove('hidden');
                 }
             } else if (type === 'domain') {
                 modalTitle.textContent = data.title;
+                modalDescription.textContent = data.description;
+                modalDescription.classList.remove('hidden');
             }
 
             modal.style.display = 'flex';
